@@ -1,14 +1,19 @@
 import multer from "multer";
-import path from "path";
 import fs from "fs";
+import { fileURLToPath } from "url";
 
 // Set storage engine
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Ensure the 'uploads' directory exists
 const uploadDir = path.join(__dirname, "uploads");
 if (!fs.existsSync(uploadDir)) {
   fs.mkdirSync(uploadDir);
 }
 
+// Configure Multer
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, uploadDir); // Directory to store uploaded files
