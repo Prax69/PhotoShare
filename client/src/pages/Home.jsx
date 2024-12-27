@@ -75,7 +75,7 @@ const Home = () => {
             (
               <div key={photo._id} className="photo-card">
                 <img
-                  src={`http://localhost:5000/${photo.filePath}`}
+                  src={`https://photoshare-3xoo.onrender.com/${photo.filePath}`}
                   alt="User upload"
                   className="photo-img"
                 />
