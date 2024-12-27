@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const API = axios.create({ baseURL: "https://photoshare-3xoo.onrender.com" });
+export const API = axios.create({ baseURL: "https://photoshare-3xoo.onrender.com/api" });
 export default API;
 
 
