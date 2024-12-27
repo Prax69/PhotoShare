@@ -14,14 +14,13 @@ const Home = () => {
   console.log("user", user);
   const navigate = useNavigate();
 
-  if (!user) {
-    navigate("/login");
-    return;
-  }
-
   useEffect(() => {
     const fetchPhotos = async () => {
       try {
+        if (!user) {
+          navigate("/login");
+          return;
+        }
         const { data } = await API.get("/photos");
         setPhotos(data);
       } catch (err) {
