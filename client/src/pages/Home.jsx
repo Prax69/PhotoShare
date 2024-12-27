@@ -4,6 +4,7 @@ import AuthContext from "../context/AuthContext.jsx";
 import "./Home.css";
 import { Heart } from "lucide-react";
 import { FaHeart } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [photos, setPhotos] = useState([]);
@@ -11,6 +12,12 @@ const Home = () => {
 
   const { user, setUser } = useContext(AuthContext);
   console.log("user", user);
+  const navigate = useNavigate();
+
+  if (!user) {
+    navigate("/login");
+    return;
+  }
 
   useEffect(() => {
     const fetchPhotos = async () => {
@@ -72,9 +79,7 @@ const Home = () => {
                   alt="User upload"
                   className="photo-img"
                 />
-                <p className="photo-user">
-                   @{photo.user.username}
-                </p>
+                <p className="photo-user">@{photo.user.username}</p>
                 <button
                   onClick={() =>
                     handleLike(photo._id, user.likes.includes(photo._id))
