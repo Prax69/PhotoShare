@@ -4,7 +4,7 @@ import AuthContext from "../context/AuthContext.jsx";
 import "./Home.css";
 import { Heart } from "lucide-react";
 import { FaHeart } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [photos, setPhotos] = useState([]);

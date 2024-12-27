@@ -20,6 +20,7 @@ const Login = () => {
       login(data); // Update AuthContext with the user data
       localStorage.setItem("token", data.token); // Save the token in localStorage
       navigate("/"); // Redirect to the home page
+      window.location.reload(); // Reload the page to update the context
     } catch (err) {
       setError(err.response?.data?.message || "Something went wrong");
     }
