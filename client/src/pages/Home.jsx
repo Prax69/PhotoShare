@@ -15,12 +15,13 @@ const Home = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    if (!user) {
+      navigate("/login");
+      return;
+    }
     const fetchPhotos = async () => {
       try {
-        if (!user) {
-          navigate("/login");
-          return;
-        }
+        
         const { data } = await API.get("/photos");
         setPhotos(data);
       } catch (err) {
