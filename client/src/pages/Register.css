@@ -1,0 +1,106 @@
+/* General styles for the Register page */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7fafc;
+}
+
+/* Styling for the registration box */
+.register-box {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 24rem;
+}
+
+/* Heading styles */
+.register-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #2d3748;
+}
+
+/* Error and success message styles */
+.error-message,
+.success-message {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.error-message {
+  color: #e53e3e; /* Red */
+}
+
+.success-message {
+  color: #38a169; /* Green */
+}
+
+/* Form field styling */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  color: #4a5568;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #3182ce;
+  box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.5);
+}
+
+.button {
+  width: 100%;
+  background-color: #3182ce;
+  color: #ffffff;
+  padding: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2b6cb0;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.text-blue-500 {
+  color: #3182ce;
+}
+
+.text-blue-500:hover {
+  text-decoration: underline;
+}

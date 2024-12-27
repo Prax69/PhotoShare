@@ -1,0 +1,82 @@
+/* Navbar styles */
+nav {
+  background-color: beige;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* background-image: url("../../grass-navbar.jpeg"); */
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: Blue;
+}
+
+nav h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav h1 a:hover {
+  text-decoration: underline;
+}
+
+nav .flex {
+  display: flex;
+  gap: 1rem;
+}
+
+nav .flex a,
+nav .flex button {
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+nav .flex a:hover,
+nav .flex button:hover {
+  opacity: 0.9;
+}
+
+nav .flex .Upload {
+  background-color: #c6e0cc; /* Green */
+}
+
+nav .flex .Upload:hover {
+  background-color: #218838; /* Darker green */
+}
+
+nav .flex .Logout {
+  background-color: #dbc5c7; /* Red */
+}
+
+nav .flex .Logout:hover {
+  background-color: #c82333; /* Darker red */
+}
+
+nav .flex .Login {
+  background-color: #0056b3; /* Dark blue */
+}
+
+nav .flex .Login:hover {
+  background-color: #004085; /* Darker blue */
+}
+
+nav .flex .Register {
+  background-color: #6c757d; /* Gray */
+}
+
+nav .flex .Register:hover {
+  background-color: #5a6268; /* Darker gray */
+}

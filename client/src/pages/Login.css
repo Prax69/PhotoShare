@@ -1,0 +1,87 @@
+/* General styles for the page */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f4f6; /* Light gray background */
+}
+
+/* Login form container */
+.login-box {
+  background-color: #ffffff; /* White background */
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+  width: 24rem;
+}
+
+.login-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333333; /* Dark gray */
+}
+
+/* Input field styling */
+.login-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db; /* Light border */
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  color: #4b5563; /* Medium gray */
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #3b82f6; /* Blue focus border */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2); /* Blue focus shadow */
+}
+
+/* Label styling */
+.login-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #374151; /* Dark gray */
+}
+
+/* Button styling */
+.login-button {
+  width: 100%;
+  background-color: #3b82f6; /* Blue */
+  color: white;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.login-button:hover {
+  background-color: #2563eb; /* Darker blue */
+}
+
+/* Error message styling */
+.login-error {
+  color: #ef4444; /* Red */
+  font-size: 0.875rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Link styling */
+.login-link {
+  color: #3b82f6; /* Blue */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
